@@ -9,12 +9,15 @@
 	<body>
 		<div class="haha" id="haha1" align="center">
 			<img src=./assets/haha.jpg id="sohandsome">
+			Hello
 		</div>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script>
 			$(function() {
-				$('#haha1').hide(3000).slideUp(200).slideDown(200);
-			}
+				$('#haha1').on('click', function(){
+					$('#haha1').hide(3000);	
+				});
+			})
 		</script>
 	</body>
 </html>
